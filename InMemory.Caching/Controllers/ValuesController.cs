@@ -15,13 +15,13 @@ namespace InMemory.Caching.Controllers
             _memoryCache = memoryCache;
         }
         [HttpGet("set/{name}")]
-        public void Set(string name)
+        public void SetName(string name)
         {     
             //projeyi çalıştırdığımızda cache e kaydedecek
             _memoryCache.Set("name", name);
         }
         [HttpGet]
-        public string Get()
+        public string GetName()
         {
            if(_memoryCache.TryGetValue<string>("name",out string name ))
             {
