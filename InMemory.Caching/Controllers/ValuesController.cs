@@ -29,5 +29,22 @@ namespace InMemory.Caching.Controllers
             };
             return "";
         }
+        [HttpGet("setDate")]
+        public void SetDate()
+        {
+            _memoryCache.Set<DateTime>("date", DateTime.Now, options: new()
+            {
+                //30 saniyelik bir veri ömrü veriyorum
+                AbsoluteExpiration = DateTime.Now.AddSeconds(30),
+                //5 saniye verdik
+                SlidingExpiration = TimeSpan.FromSeconds(5)
+
+            });
+        }
+        [HttpGet("getDate")]
+        public DateTime GetDate()
+        {
+            return _memoryCache.Get<DateTime>("date");
+        }
     }
 }
