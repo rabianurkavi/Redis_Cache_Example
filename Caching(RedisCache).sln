@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemory.Caching", "InMemory.Caching\InMemory.Caching.csproj", "{66E61D05-44D8-4299-82E8-A433188D2F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemory.Caching", "InMemory.Caching\InMemory.Caching.csproj", "{66E61D05-44D8-4299-82E8-A433188D2F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distributed.Caching", "Distributed.Caching\Distributed.Caching.csproj", "{B180D816-A4BC-43F8-9D12-B4E09F030D5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distributed.Caching", "Distributed.Caching\Distributed.Caching.csproj", "{B180D816-A4BC-43F8-9D12-B4E09F030D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Pub.Sub.Example", "Redis.Pub.Sub.Example\Redis.Pub.Sub.Example.csproj", "{1EB59019-1D93-46A4-8EE3-97A7B43994CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B180D816-A4BC-43F8-9D12-B4E09F030D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B180D816-A4BC-43F8-9D12-B4E09F030D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B180D816-A4BC-43F8-9D12-B4E09F030D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB59019-1D93-46A4-8EE3-97A7B43994CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB59019-1D93-46A4-8EE3-97A7B43994CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB59019-1D93-46A4-8EE3-97A7B43994CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB59019-1D93-46A4-8EE3-97A7B43994CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
